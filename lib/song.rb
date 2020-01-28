@@ -1,8 +1,8 @@
 require 'pry'
 
 class Song
-  attr_accessor :name
-  attr_reader :artist
+  attr_accessor :name, :artist
+  # attr_reader :artist
 
   @@songs = []
 
@@ -15,8 +15,8 @@ class Song
   extend Findable::ClassMethods
   include Paramable::InstanceMethods
 
-  def artist=(artist)
-    @artist = artist
-  end
+  # def artist=(artist)
+  #   @artist = artist
+  # end
 
 end
